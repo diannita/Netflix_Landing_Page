@@ -1,3 +1,4 @@
+/* Global Styles */
 :root {
     --primary-color: #e50914;
     --dark-color: #141414;
@@ -155,6 +156,22 @@ img {
     color: #fff
 }
 
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+
 #tab-1-content .tab-1-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -163,7 +180,7 @@ img {
     justify-content: center;
 }
 
-#tab-2-content .tab-2-content-top {
+.tab-2-content-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
